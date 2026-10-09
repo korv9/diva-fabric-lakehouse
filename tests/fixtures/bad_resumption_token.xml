@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture (synthetic) -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+  <responseDate>2024-03-02T00:00:00Z</responseDate>
+  <request verb="ListRecords">https://oai.synthetic.example/oai</request>
+  <error code="badResumptionToken">The resumptionToken has expired</error>
+</OAI-PMH>

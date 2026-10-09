@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture (synthetic): records that must be quarantined -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+  <responseDate>2024-03-02T00:00:00Z</responseDate>
+  <request verb="ListRecords">https://oai.synthetic.example/oai</request>
+  <ListRecords>
+    <record>
+      <header><identifier>oai:DiVA.org:uu-1</identifier></header>
+      <metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:title>No datestamp</dc:title></oai_dc:dc></metadata>
+    </record>
+    <record>
+      <header><identifier>oai:DiVA.org:uu-2</identifier><datestamp>01/03/2024</datestamp></header>
+      <metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:title>Bad datestamp</dc:title></oai_dc:dc></metadata>
+    </record>
+    <record>
+      <header><identifier>oai:DiVA.org:uu-3</identifier><datestamp>2024-03-01</datestamp></header>
+    </record>
+    <record>
+      <header><identifier>   </identifier><datestamp>2024-03-01</datestamp></header>
+      <metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:title>Blank id</dc:title></oai_dc:dc></metadata>
+    </record>
+  </ListRecords>
+</OAI-PMH>

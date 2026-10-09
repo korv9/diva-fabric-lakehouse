@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture (synthetic) -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+  <responseDate>2024-03-01T00:00:00Z</responseDate>
+  <request verb="Identify">https://oai.synthetic.example/oai</request>
+  <Identify>
+    <repositoryName>Synthetic test repository</repositoryName>
+    <baseURL>https://oai.synthetic.example/oai</baseURL>
+    <protocolVersion>2.0</protocolVersion>
+    <adminEmail>nobody@synthetic.example</adminEmail>
+    <earliestDatestamp>2000-01-01</earliestDatestamp>
+    <deletedRecord>persistent</deletedRecord>
+    <granularity>YYYY-MM-DD</granularity>
+  </Identify>
+</OAI-PMH>

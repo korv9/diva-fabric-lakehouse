@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture (synthetic). Uses a non-default prefix for the OAI namespace on purpose. -->
+<o:OAI-PMH xmlns:o="http://www.openarchives.org/OAI/2.0/">
+  <o:responseDate>2024-03-02T00:00:00Z</o:responseDate>
+  <o:request verb="ListRecords" metadataPrefix="oai_dc">https://oai.synthetic.example/oai</o:request>
+  <o:ListRecords>
+    <o:record>
+      <o:header>
+        <o:identifier>oai:DiVA.org:uu-100001</o:identifier>
+        <o:datestamp>2024-03-01</o:datestamp>
+        <o:setSpec>synthetic:studentThesis</o:setSpec>
+      </o:header>
+      <o:metadata>
+        <d:dc xmlns:d="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:e="http://purl.org/dc/elements/1.1/">
+          <e:title>  Test   thesis
+            one </e:title>
+          <e:subject>alpha</e:subject>
+          <e:subject>beta</e:subject>
+          <e:subject>gamma</e:subject>
+          <e:description>Line one.
+
+Line two.</e:description>
+          <e:publisher>Uppsala universitet, Institutionen X</e:publisher>
+          <e:publisher>Some Publisher AB</e:publisher>
+          <e:date>2021-05-01</e:date>
+          <e:type>Student thesis</e:type>
+          <e:identifier>http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-100001</e:identifier>
+          <e:language>swe</e:language>
+        </d:dc>
+      </o:metadata>
+    </o:record>
+    <o:record>
+      <o:header status="deleted">
+        <o:identifier>oai:DiVA.org:kth-200002</o:identifier>
+        <o:datestamp>2024-03-01</o:datestamp>
+      </o:header>
+    </o:record>
+    <o:resumptionToken completeListSize="3" cursor="0">token-page-2</o:resumptionToken>
+  </o:ListRecords>
+</o:OAI-PMH>

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+# local Spark / demo output
+spark-warehouse/
+metastore_db/
+derby.log
+.local-demo/
+.ipynb_checkpoints/

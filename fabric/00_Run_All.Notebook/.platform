@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "00_Run_All",
+    "description": "Runs the whole DiVA lakehouse flow (ingestion, Bronze, Silver, quality, Gold) in one session."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a84a0f7a-b0c3-53d2-9b63-e152e82d3950"
+  }
+}

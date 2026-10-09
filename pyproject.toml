@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diva-lakehouse"
+version = "0.1.0"
+description = "DiVA Research Lakehouse: OAI-PMH metadata -> Bronze/Silver/Gold Delta tables in Microsoft Fabric"
+readme = "README.md"
+requires-python = ">=3.10"
+# Runtime code uses only the standard library plus the Spark/Delta runtime that
+# Fabric already provides. Nothing has to be installed in Fabric.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "nbformat>=5.9"]
+# Local Spark tests only; versions chosen to match Fabric Runtime 1.3 (Spark 3.5, Delta 3.2).
+spark = ["pyspark==3.5.3", "delta-spark==3.2.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "scripts", "."]
+markers = ["spark: needs pyspark + delta-spark + Java (tests/spark)"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["fabric", "ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B905"]

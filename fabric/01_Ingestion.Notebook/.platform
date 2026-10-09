@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "01_Ingestion",
+    "description": "DiVA OAI-PMH harvest: raw XML pages + manifest under Files/diva/raw/<run_id>/."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2e428df5-a7f6-5150-b031-a12d37f128c7"
+  }
+}

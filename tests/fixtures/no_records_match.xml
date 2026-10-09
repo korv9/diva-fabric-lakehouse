@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture (synthetic) -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+  <responseDate>2024-03-02T00:00:00Z</responseDate>
+  <request verb="ListRecords" metadataPrefix="oai_dc" from="1990-01-01" until="1990-01-02">https://oai.synthetic.example/oai</request>
+  <error code="noRecordsMatch">No records match the request</error>
+</OAI-PMH>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture (synthetic) -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+  <responseDate>2024-03-02T00:00:01Z</responseDate>
+  <request verb="ListRecords" resumptionToken="token-page-2">https://oai.synthetic.example/oai</request>
+  <ListRecords>
+    <record>
+      <header>
+        <identifier>oai:DiVA.org:su-300003</identifier>
+        <datestamp>2024-03-02</datestamp>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+          <dc:title>Doctoral work</dc:title>
+          <dc:type>Doctoral thesis, monograph</dc:type>
+          <dc:language>eng</dc:language>
+        </oai_dc:dc>
+      </metadata>
+    </record>
+    <resumptionToken completeListSize="3" cursor="2"/>
+  </ListRecords>
+</OAI-PMH>

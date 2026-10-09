@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "04_Gold",
+    "description": "Blocking quality checks -> Gold tables, exports and run report."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d3523d69-0bb8-5184-a08f-b4bdb1e0460e"
+  }
+}
